@@ -1,0 +1,26 @@
+table, th, td {
+	border: 1px solid blue;
+	border-collapse: collapse;
+	padding: 5px 0px 5px 10px;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	height: 25px;
+}
+
+tfoot td{
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #c3b299;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #cbd4c2;
+}
+

@@ -1,0 +1,23 @@
+a {
+	font-family: serif;
+	text-decoration: underline;
+	font-weight: none;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color:#f6d8ac;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #0d1f2d;
+	font-weight: bold;
+}
+
+a:active {
+	font-weight: bold;
+}

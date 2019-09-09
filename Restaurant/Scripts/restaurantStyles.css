@@ -1,0 +1,40 @@
+header {
+/*	background-color: #271F30;
+	color: #8BA6A9;*/
+	color: #271F30;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	font-family: 'Comic Sans MS', arial;
+}
+
+footer {
+/*	background-color: #271F30;
+	color: #8BA6A9;*/
+	color: #271F30;
+	padding-top: 12px;
+	padding-bottom: 6px;
+	text-align: center;
+	font-family: 'Comic Sans MS', arial;
+}
+
+body {
+	font-family: 'Comic Sans MS', arial;
+	background-color: #D0FCB3;
+}
+
+a {
+	color: #271F30;
+}
+
+a:visited {
+	color: #6C5A49;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+a:active {
+	text-decoration: none;
+}

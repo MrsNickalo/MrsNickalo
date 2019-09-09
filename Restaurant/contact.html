@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Contact Us</title>
+		<link href="Scripts/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			label {
+				font-weight: bold;
+				display: inline-block;
+				width: 33%;
+				text-align: right;
+				
+			}
+			input, select, textarea {
+				margin-left: 15px;
+				width: 33%;
+			}
+			input[type=radio] {
+				margin-left: 15px;
+				width: 15px;
+			}
+			input[type="checkbox"] {
+				margin-left: 15px;
+				width: 15px;
+			}
+			input[type="submit"] {
+				text-align: center;
+				width: 20%;
+				margin-left: 40%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Austyn's Cafe</h1>
+		</header>
+		<nav>
+			<hr />
+			<a href="home.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="contact.html">Contact Us</a>
+			<hr />
+		</nav>
+		<form action=" " method="POST">
+			<label>Name:</label>
+			<input type="text" name="userName" /><br />
+			<label>Email:</label>
+			<input type="text" name="userEmail" /><br />
+			<label>Phone:</label>
+			<input type="text" name="userPhone" /><br />
+			<label>Reason for Inquiry:</label>
+			<select name="userReason">
+				<option value="Catering" checked>Catering</option>
+				<option value="PrivateParty">Private Party</option>
+				<option value="Feedback">Feedback</option>
+				<option value="Other">Other</option>
+			</select><br />
+			<label>Additional Information:</label>
+			<textarea name="userAddInfo"></textarea><br />
+			<label>Have you been to the restaurant?</label>
+			<input type="radio" value="No" checked>No
+			<input type="radio" value="Yes">Yes <br />
+			<label>Best days to contact you:</label>
+			<input type="checkbox" name="userDays" value="Mon" />M
+			<input type="checkbox" name="userDays" value="Tues" />T
+			<input type="checkbox" name="userDays" value="Wed" />W
+			<input type="checkbox" name="userDays" value="Thurs" />Th
+			<input type="checkbox" name="userDays" value="Fri" />F
+			<br />
+			<input type="submit" name="Send Request" />
+		</form>
+		<footer>
+			<hr />
+			502 Oakland Avenue, Rock Hill, SC, 29730 <br />
+			803-323-5153
+			<hr />
+		</footer>
+	</body>
+</html>

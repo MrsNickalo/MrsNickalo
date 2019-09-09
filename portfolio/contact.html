@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Me</title>
+		<link href="formstyles.css" rel="stylesheet" type="text/css" />
+		<link href="teststyles.css" rel="stylesheet" type="text/css" />
+		<link href="linkstyle.css" rel="stylesheet" type="text/css" />
+		<style>
+
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Contact Me</h1>
+			<hr />
+		</header>
+		<nav>
+			<a href="index.html">Main Page</a>
+			<hr />
+		</nav>
+		<h3>Information Request</h3>
+		<form action="FakePage.html" method="POST">
+			First Name: <br />
+			<input type="text" name="userFirstName" />
+			<br />
+			Last Name: <br />
+			<input type="text" name="userLastName" />
+			<br />
+			Phone Number: <br />
+			<input type="text" name="userPhone" />
+			<br />
+			Best time to call: <br />
+			<select name="userCall">
+				<option value="Unselected">--Select One--</option>
+				<option value="Monday">Monday</option>
+				<option value="Tuesday">Tuesday</option>
+				<option value="Wednesday">Wednesday</option>
+				<option value="Thursday">Thursday</option>
+				<option value="Friday">Friday</option>
+			</select>
+			<br />
+			I am interested in (check all that apply):
+			<br />
+			<input type="checkbox" name="userInterest" value="Front" /> Front-End Web Development
+			<br />
+			<input type="checkbox" name="userInterest" value="Back" /> Back-End Web Development
+			<br />
+			<input type="checkbox" name="userInterest" value="Database" /> Database Design
+			<br />
+			I have filled in the client questionairre form:
+			<br />
+			<input type="radio" name="userQuestionaire" value="Yes" checked />
+			<br />
+			<input type="radio" name="userQuestionaire" value="No" />
+			<br />
+			Additional Information:
+			<br />
+			<textarea name="addInfo"></textarea>
+			<br />
+			<input type="submit" />
+		</form>
+		<footer>
+			<hr />
+			&copy; 2020 Lindsay Nickalo. All rights reserved.
+		</footer>
+	</body>
+</html>

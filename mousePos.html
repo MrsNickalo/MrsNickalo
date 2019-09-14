@@ -1,0 +1,26 @@
+<!--
+Author: Lindsay Nickalo
+Email: bradleyL4@winthrop.edu
+Date: September 13, 2019
+Purpose: Exploration of JavaScript and locating the mouse
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mouse Position</title>
+		<script type="text/javascript" src="mousePos.js">
+		</script>
+	</head>
+	<body onclick="toggleTracking()" onmousemove="updateMousePosition();">
+		<h1>Display the Mouse Position</h1>
+		<p>Click anywhere on the page to toggle the mouse position tracking.</p>
+		<hr />
+		<div>
+			Mouse tracking: <span id="trackingStatus">NOT TRACKING</span>
+		</div>
+		<fieldset>
+			<label>Mouse X: </label><label id="mousePosX"></label>
+			<label>Mouse Y: </label><label id="mousePosY"></label>
+		</fieldset>
+	</body>
+</html>

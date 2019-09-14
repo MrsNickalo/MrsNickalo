@@ -1,0 +1,40 @@
+<!--
+Author: Lindsay Nickalo
+Email: bradleyL4@winthrop.edu
+Date: September 13, 2019
+Purpose: Practice with JavaScript
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Even Numbers</title>
+		<script type="text/javascript" src="evens.js">
+		</script>
+                <link href="https://maxcdn.boostrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<h1>Finding the Even Numbers</h1>
+		<form id="numberForm" onsubmit="return validateForm();" onreset="resetForm()" class="form-inline">
+			<div class="form-group">
+				<label for="startNum">Starting Number </label>
+				<input type="number" id="startNum" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="endNum">Ending Number </label>
+				<input type="number" id="endNum" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="stepNum">Step </label>
+				<input type="number" id="stepNum" class="form-control" />
+			</div>
+				<button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
+				<button type="reset" id="resetButton" class="btn">Reset</button>
+		</form>
+		<div id="displayEvens" style="display:none">
+			<p id="testing"></p>
+			<p id="answer"></p>
+<!--			<h1>Testing</h1>-->
+		</div>
+	</body>
+</html>

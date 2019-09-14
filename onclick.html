@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Simple onClick Example with Function</title>
+	</head>
+	<body>
+		<div>
+			Enter your name: <input type="text" id="inputName" placeholder="What's your name?" />
+			<button onclick="greetTheUser();">Show Greeting</button>
+			<br />
+			<br />
+			<button onclick="mousePos(event)">Show Mouse Position</button>
+			<button onclick="showMore();">Show More</button>
+		</div>
+		<div id="mousePosition" style="display:none;">
+			<p id="mouseClick"></p>
+		</div>
+		<div id="greeting" style="display:none;">
+			<h1>Hi, <span id="userName"></span>!<h1>
+		</div>
+		<div id="showMore" style="display:none;">
+			<h1>Welcome to JavaScript!</h1>
+			<br />
+			<button onclick="showEvenMore()">Show Even More!</button>	
+		</div>
+		<div id="showEvenMore" style="display:none;">
+			<h1 style="color:red">You did it!</h1>
+		</div>
+                <script type="text/javascript">
+                        function greetTheUser()
+                        {
+                                document.getElementById("userName").innerText = document.getElementById("inputName").value;
+                                document.getElementById("greeting").style.display = "block";
+                        }
+                        function showMore()
+                        {
+                                document.getElementById("showMore").style.display = "block";
+                        }
+                        function showEvenMore()
+                        {
+                                document.getElementById("showEvenMore").style.display = "block";
+                        }
+			function mousePos(event)
+			{
+				var x = event.clientX;
+				var y = event.clientY;
+				var coords = "X coords: " + x + ", Y coords: " + y;
+				document.getElementById("mouseClick").innerHTML = coords;
+				document.getElementById("mousePosition").style.display = "block";
+			}
+                </script>
+
+
+	</body>
+</html>
